@@ -10,7 +10,7 @@ import SwiftUI
 struct ContentView: View {
     var body: some View {
         ZStack {
-            Image("bg-login")
+            Image("background-login")
                 .resizable()
                 .ignoresSafeArea()
             VStack(spacing: 20) {
@@ -36,13 +36,13 @@ struct ContentView_Preview: PreviewProvider {
 struct IconView: View {
     var body: some View {
         VStack {
-            Image("swift-icon")
+            Image("icon-swift")
                 .resizable()
                 .frame(width: 100, height: 100)
-                .background(.profileBackground)
+                .background(.backgroundProfile)
                 .foregroundColor(.white)
                 .padding()
-                .background(.profileBackground)
+                .background(.backgroundProfile)
                 .cornerRadius(20)
             Text("Please Login")
                 .bold()
@@ -78,7 +78,7 @@ struct FormLogin: View {
             
         }
         .padding(.all, 30)
-        .background(.profileBackground)
+        .background(.backgroundProfile)
         .cornerRadius(10)
         
     }
